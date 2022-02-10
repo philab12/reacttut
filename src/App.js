@@ -4,6 +4,7 @@ import ControlledGreeting from './ControlledGreeting';
 import ControlledSelectGreeting from './ControlledSelectGreeting';
 
 function App() {
+  // eslint-disable-next-line prefer-rest-params
   console.log('rendering component App');
   const [greeting, setGreeting] = useState('Hello World');
   const [greeting2, setGreeting2] = useState('Hello World');
@@ -41,7 +42,7 @@ function App() {
       <ControlledGreeting onTextChange={setText3} title="controlGreeting2" />
       <ControlledSelectGreeting onTextChange={combinedChangeHandler} title="Selected Test" />
       <div>
-        <button onClick={clickHandler}>Click Me</button>
+        <button type="button" onClick={clickHandler}>Click Me</button>
       </div>
     </div>
   );
