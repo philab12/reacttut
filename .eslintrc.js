@@ -20,11 +20,12 @@ module.exports = {
   plugins: ['prettier', 'react'],
   rules: {
     'prettier/prettier': ['error'],
+    'no-console': 'off',
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/jsx-indent-props': [2, 4],
-    'react/jsx-indent': [2, 4],
+    'react/jsx-indent': [2, 2],
     'react/jsx-one-expression-per-line': [0],
     'react/prefer-stateless-function': [1],
     'react/static-property-placement': [1, 'property assignment'],
